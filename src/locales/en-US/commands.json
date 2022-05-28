@@ -1,0 +1,191 @@
+{
+     "bot-info": {
+          "name": "bot-info",
+          "description": "Shows necessary information about the bot.",
+          "info": "Information About Bot",
+          "developer": "Bot Developer",
+          "bot_info": {
+               "name": "Bot Information",
+               "bot_name": "Bot Name",
+               "bot_version": "Bot Version",
+               "bot_ping": "Ping"
+          },
+          "bot_data": {
+               "name": "Bot Data",
+               "total_server": "Total Server",
+               "total_user": "Total User",
+               "total_channel": "Total Channel",
+               "total_vc_channel": "Total Voice Channel"
+          },
+          "system_info": {
+               "name": "System Information",
+               "system": "System",
+               "node_version": "Node Version",
+               "ram_usage": "Ram Usage",
+               "cpu_usage": "CPU Usage",
+               "processor": "Processor"
+          }
+     },
+     "invite": {
+          "name": "invite",
+          "description": "You can invite the bot to your server by getting the invite link.",
+          "label": "Add Me to Your Server",
+          "embed": {
+               "title": "Invite me!",
+               "description": "Hello! I heard you want to invite me to your server. You have no idea how glad I am to hear that! You can use the button below [or click on this message to invite me](https://discord.com/api/oauth2/authorize?client_id=950403923687133254&permissions=8&scope=bot%20applications.commands)!"
+          }
+     },
+     "ping": {
+          "name": "ping",
+          "description": "Shows the latency of the bot and Discord.",
+          "discord_latency": "Discord Latency",
+          "bot_latency": "Bot Latency"
+     },
+     "privacy": {
+          "name": "privacy-policy",
+          "description": "Shows the bot's privacy policy.",
+          "e_title": "Achela bot Privacy Policy",
+          "e_description": "By using the bot you agree to our privacy policy.",
+          "fields": {
+               "which_data": "What data do we use?",
+               "which_data_val": "We do not collect any personal information about your account such as passwords or other Credentials. The data we collect includes User IDs, Server IDs, Channel IDs and Some Role IDs. The bot never asks for users' personal information and any behavior that breaks Tos of Discord will be discouraged by us!",
+               "request_data": "Why do we want this data?",
+               "request_data_val": "Data is required for bot features such as server-info, user-info, and cooldown to work properly. Without this data, our bot cannot perform these activities and therefore renders the features inaccessible to users.",
+               "using_data": "How do we use this data?",
+               "using_data_val": "The data is used for our Bot to work properly for server-info, user-info and cooldown features. User IDs are used to identify users, Channel IDs are used to send messages to designated channels, Server IDs are used to identify Servers, and Role IDs are used for the Autorole feature.",
+               "data_storage": "How long does it keep data?",
+               "data_storage_val": "The data is stored for as long as the bot is on your Server and as soon as the bot is removed from the Server, the data is deleted and can no longer be accessed by anyone.",
+               "data_sharing": "With whom do we share the data?",
+               "data_sharing_val": "We never share your data with anyone other than [MongoDB Inc](https://mongodb.com), a DataBase Company, and all data for our Bot is stored on MongoDB Servers and according to MongoDB Inc. the data is only accessible by us.",
+               "another_concern": "Have other concerns or questions?",
+               "another_concern_val": "If you have any concerns or questions about our privacy policy or our bot, or if you want your data removed, you can contact us. You can contact [Achela#0013](https://discord.com/users/615079401473703956) or [Achela Bot Support](https://discord.gg/rE6prcRU7D) on the server."
+          }
+     },
+     "report": {
+          "name": "report",
+          "description": "Report a bug you encountered while using the bot.",
+          "error_message": "The error you specified has been reported successfully. Thanks for reporting the bug.",
+          "error": "error",
+          "error_description": "Write a description of the error.",
+          "report_options": {
+               "name": "error",
+               "description": "Write the error you encountered."
+          }
+     },
+     "suggest": {
+          "name": "suggestion",
+          "description": "Make suggestions on bot-related commands, designs, etc.",
+          "suggest": "Your suggestion has been successfully forwarded to the developers!",
+          "suggest_options": {
+               "name": "your_suggestion",
+               "description": "Your suggestion on design, command etc."
+          }
+     },
+     "fbi": {
+          "name": "fbi",
+          "description": "call the FBI.",
+          "title": "FBI is coming!"
+     },
+     "meme": {
+          "name": "meme",
+          "description": "Size rastgele İngilizce bir meme gösterir."
+     },
+     "avatar": {
+          "name": "avatar",
+          "description": "Shows the presenter or public profile photo of yourself or the person you are talking about.",
+          "title": "{{user}}'s avatar",
+          "descriptions": "[Click Here]({{avatar}}) You Can Access Avatar Link.",
+          "avatar_options": {
+               "name": "user",
+               "description": "Enter the user whose avatar you want to see."
+          }
+     },
+     "info": {
+          "name": "info"
+     },
+     "server": {
+          "name": "server-info",
+          "description": "Shows detailed information about the server.",
+          "embed1": {
+               "servername": "Server Name",
+               "serverowner": "Server Owner",
+               "serverid": "Server ID",
+               "servercrate": "Creation Date"
+          },
+          "embed2": {
+               "name": "Situations",
+               "online": "Online",
+               "idle": "İdle",
+               "dnd": "Dnd",
+               "offline": "Offline"
+          },
+          "embed3": {
+               "name": "Users",
+               "member": "Members",
+               "bots": "Bots"
+          },
+          "embed4": {
+               "name": "Emojis",
+               "animated": "Animated",
+               "static": "Static",
+               "sticker": "Sticker"
+          },
+          "embed5": {
+               "name": "Channels",
+               "text": "Text Channels",
+               "voice": "Voice Channels",
+               "thread": "Threads",
+               "category": "Categorys",
+               "stage": "Stage Channels"
+          }
+     },
+     "user": {
+          "name": "user-info",
+          "description": "Shows detailed information about the user.",
+          "created": "Account Creation Date",
+          "joined": "Server Join Date",
+          "roles": "Roles",
+          "noroles": "No Role",
+          "nickname": "Nickname",
+          "nonickname": "No Nickname",
+          "bot": "Is it a bot?",
+          "timeout": "Timeout Expires",
+          "avatar": "User's Avatar",
+          "user_options": {
+               "name": "user",
+               "description": "The user you want to receive information about."
+          }
+     },
+     "purge": {
+          "name": "purge",
+          "description": "Deletes the messages sent in the channel.",
+          "deleted": "{{amount}} messages deleted!",
+          "deleted_options": {
+               "name": "amount",
+               "description": "Enter the number of messages you want to delete."
+          }
+     },
+     "v-kick": {
+          "name": "v-kick",
+          "description": "Kicks user off voice.",
+          "member_not_voice": ":x: The member is not on any voice channel!",
+          "succes": "`{{user}}` has been successfully kicked out of the voice channel.",
+          "kicked": "discarded by `{{by}}`",
+          "v-kick_options": {
+               "name": "user",
+               "description": "The user you want to mute."
+          }
+     },
+     "help": {
+          "name": "help",
+          "description": "Shows information about the Achela bot and related links.",
+          "embed": {
+               "description": "Achela bot makes it easy for you to do your moderation work and aims to entertain you with entertainment commands. It is a bot that only works with `/` commands and has language support."
+          },
+          "buttons": {
+               "label1": "Invite Link",
+               "label2": "Support Server",
+               "label3": "Vote Link"
+          }
+     }
+}

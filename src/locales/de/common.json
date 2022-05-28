@@ -1,0 +1,10 @@
+{
+     "cooldown_error": "Sie müssen weitere `{{cooldown}}` Sekunden warten, bevor Sie diesen Befehl erneut verwenden können!",
+     "missing_permissions": "Sie müssen das Recht `{{permission}}` haben, um diesen Befehl zu verwenden!",
+     "unexpected_error": "Bei der Verwendung dieses Befehls ist ein Fehler aufgetreten!",
+     "username": "Nutzername",
+     "roles": "Rollen",
+     "createdat": "Erstellungsdatum des Kontos",
+     "joinedat": "Datum des Serverbeitritts",
+     "noreason": "Grund nicht angegeben"
+}

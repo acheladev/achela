@@ -1,0 +1,190 @@
+{
+     "bot-info": {
+          "name": "bot-bilgi",
+          "description": "Zeigt notwendige Informationen über den Bot an.",
+          "info": "Informationen zum Bot",
+          "developer": "Bot-Entwickler",
+          "bot_info": {
+               "name": "Bot Informationen",
+               "bot_name": "Bot Name",
+               "bot_version": "Bot Version",
+               "bot_ping": "Klingeln"
+          },
+          "bot_data": {
+               "name": "BotDaten",
+               "total_server": "Server insgesamt",
+               "total_user": "Benutzer insgesamt",
+               "total_channel": "Kanäle insgesamt",
+               "total_vc_channel": "Audiokanäle insgesamt"
+          },
+          "system_info": {
+               "name": "System Information",
+               "system": "System",
+               "node_version": "Knotenversion",
+               "ram_usage": "RAM Nutzung",
+               "cpu_usage": "CPU auslastung",
+               "processor": "Prozessor"
+          }
+     },
+     "invite": {
+          "name": "einladung",
+          "description": "Sie können den Bot auf Ihren Server einladen, indem Sie den Einladungslink abrufen.",
+          "label": "Fügen Sie mich zu Ihrem Server hinzu",
+          "embed": {
+               "title": "Lade mich ein!",
+               "description": "Hallo! Ich habe gehört, dass du mich auf deinen Server einladen möchtest. Du hast keine Ahnung, wie froh ich bin, das zu hören! Sie können die Schaltfläche unten verwenden [oder auf diese Nachricht klicken, um mich einzuladen](https://discord.com/api/oauth2/authorize?client_id=950403923687133254&permissions=8&scope=bot%20applications.commands)!"
+          }
+     },
+     "ping": {
+          "name": "klingeln",
+          "description": "Zeigt die Latenz des Bots und von Discord an.",
+          "discord_latency": "Discord Verzögerung",
+          "bot_latency": "Bot Verzögerung"
+     },
+     "privacy": {
+          "name": "datenschutz-bestimmungen",
+          "description": "Zeigt die Datenschutzrichtlinie des Bots an.",
+          "e_title": "Datenschutzerklärung für den Achela-Bot",
+          "e_description": "Durch die Nutzung des Bots stimmen Sie unserer Datenschutzerklärung zu.",
+          "fields": {
+               "which_data": "Welche Daten verwenden wir?",
+               "which_data_val": "Wir sammeln keine persönlichen Informationen über Ihr Konto wie Passwörter oder andere Zugangsdaten. Die von uns erfassten Daten umfassen Benutzer-IDs, Server-IDs, Kanal-IDs und einige Rollen-IDs. Der Bot fragt niemals nach den persönlichen Informationen der Benutzer und jedes Verhalten, das Tos of Discord bricht, wird von uns entmutigt!",
+               "request_data": "Warum wollen wir diese Daten?",
+               "request_data_val": "Daten sind erforderlich, damit Bot-Funktionen wie Serverinformationen, Benutzerinformationen und Abklingzeit ordnungsgemäß funktionieren. Ohne diese Daten kann unser Bot diese Aktivitäten nicht ausführen und macht die Funktionen daher für Benutzer unzugänglich.",
+               "using_data": "Wie verwenden wir diese Daten?",
+               "using_data_val": "Die Daten werden verwendet, damit unser Bot ordnungsgemäß für Serverinformationen, Benutzerinformationen und Cooldown-Funktionen funktioniert. Benutzer-IDs werden verwendet, um Benutzer zu identifizieren, Kanal-IDs werden verwendet, um Nachrichten an bestimmte Kanäle zu senden, Server-IDs werden verwendet, um Server zu identifizieren, und Rollen-IDs werden für die Autorole-Funktion verwendet.",
+               "data_storage": "Wie lange bewahren wir Daten auf?",
+               "data_storage_val": "Die Daten werden gespeichert, solange sich der Bot auf Ihrem Server befindet und sobald der Bot vom Server entfernt wird, werden die Daten gelöscht und sind für niemanden mehr zugänglich.",
+               "data_sharing": "Mit wem teilen wir die Daten?",
+               "data_sharing_val": "Wir teilen Ihre Daten niemals mit jemand anderem als [MongoDB Inc](https://mongodb.com), einem Datenbankunternehmen, und alle Daten für unseren Bot werden auf MongoDB-Servern gespeichert und laut MongoDB Inc. sind die Daten nur zugänglich für uns.",
+               "another_concern": "Haben Sie andere Anliegen oder Fragen?",
+               "another_concern_val": "Wenn Sie Bedenken oder Fragen zu unserer Datenschutzrichtlinie oder unserem Bot haben oder wenn Sie möchten, dass Ihre Daten entfernt werden, können Sie uns kontaktieren. Sie können [Achela#0013](https://discord.com/users/615079401473703956) oder [Achela Bot Support](https://discord.gg/pU6S3KxVzx) auf dem Server kontaktieren."
+          }
+     },
+     "report": {
+          "name": "prüfbericht",
+          "description": "Melden Sie einen Fehler, auf den Sie bei der Verwendung des Bots gestoßen sind.",
+          "error_message": "Der von Ihnen angegebene Fehler wurde erfolgreich gemeldet. Danke, dass Sie den Fehler gemeldet haben.",
+          "error": "error",
+          "error_description": "Geben Sie eine Beschreibung des Fehlers ein.",
+          "report_options": {
+               "name": "error",
+               "description": "Schreiben Sie den aufgetretenen Fehler auf."
+          }
+     },
+     "suggest": {
+          "name": "anregung",
+          "description": "Machen Sie Vorschläge zu Bot-bezogenen Befehlen, Designs usw.",
+          "suggest": "Ihr Vorschlag wurde erfolgreich an die Entwickler weitergeleitet!",
+          "suggest_options": {
+               "name": "ihr-vorschlag",
+               "description": "Ihr Vorschlag zu Design, Befehl etc."
+          }
+     },
+     "fbi": {
+          "name": "fbi",
+          "description": "Rufen Sie das FBI an.",
+          "title": "Das FBI kommt!"
+     },
+     "meme": {
+          "name": "meme",
+          "description": "Es zeigt Ihnen ein zufälliges englisches Meme."
+     },
+     "avatar": {
+          "name": "benutzerbild",
+          "description": "Zeigt das Moderator- oder öffentliche Profilfoto von Ihnen oder der Person, über die Sie sprechen.",
+          "title": "Avatar von {{user}}",
+          "avatar_options": {
+               "name": "benutzer",
+               "description": "Geben Sie den Benutzer ein, dessen Avatar Sie sehen möchten."
+          }
+     },
+     "info": {
+          "name": "ınformation"
+     },
+     "server": {
+          "name": "server-info",
+          "description": "Zeigt detaillierte Informationen über den Server an.",
+          "embed1": {
+               "servername": "Servername",
+               "serverowner": "Serverbesitzer",
+               "serverid": "Server-ID",
+               "servercrate": "Erstellungsdatum"
+          },
+          "embed2": {
+               "name": "Situationen",
+               "online": "Aktiv",
+               "idle": "leerlauf",
+               "dnd": "Bitte nicht stören",
+               "offline": "Unsichtbar"
+          },
+          "embed3": {
+               "name": "Benutzer",
+               "member": "Mitglieder",
+               "bots": "Stiefel"
+          },
+          "embed4": {
+               "name": "Emojis",
+               "animated": "Animiert",
+               "static": "Keine Animation",
+               "sticker": "Aufkleber"
+          },
+          "embed5": {
+               "name": "Kanäle",
+               "text": "Textkanäle",
+               "voice": "Audiokanäle",
+               "thread": "Unterüberschriften",
+               "category": "Kategorien",
+               "stage": "Bühnenkanäle"
+          }
+     },
+     "user": {
+          "name": "nutzerinformation",
+          "description": "Zeigt detaillierte Informationen über den Benutzer an.",
+          "created": "Erstellungsdatum des Kontos",
+          "joined": "Datum des Serverbeitritts",
+          "roles": "Rollen",
+          "noroles": "Keine Rolle",
+          "nickname": "Spitzname",
+          "nonicknames": "Kein Spitzname",
+          "bot": "Ist es ein Bot?",
+          "timeout": "Zeitüberschreitung läuft ab",
+          "avatar": "Avatar des Benutzers",
+          "user_options": {
+               "name": "benutzer",
+               "description": "Der Benutzer, über den Sie Informationen erhalten möchten."
+          }
+     },
+     "purge": {
+          "name": "säubern",
+          "description": "Löscht die im Kanal gesendeten Nachrichten.",
+          "deleted": "{{amount}} Nachrichten gelöscht!",
+          "deleted_options": {
+               "name": "anzahl",
+               "description": "Geben Sie die Anzahl der Nachrichten ein, die Sie löschen möchten."
+          }
+     },
+     "v-kick":{
+          "name": "v-kick",
+          "description": "Kickt den Benutzer aus der Voicemail.",
+          "member_not_voice": ":x: Das Mitglied befindet sich auf keinem Sprachkanal!",
+          "succes": "`{{user}}` wurde erfolgreich aus dem Sprachkanal gekickt.",
+          "kicked": "Ausgelöst von `{{by}}`.",
+          "v-kick_options": {
+               "name": "benutzer",
+               "description": "Der Benutzer, den Sie stummschalten möchten."
+          }
+     },
+     "help": {
+          "name": "hilfe",
+          "description": "Zeigt Informationen zum Achela-Bot und zugehörige Links an.",
+          "embed": {
+               "description": "Der Achela-Bot erleichtert Ihnen Ihre Moderationsarbeit und möchte Sie mit Unterhaltungsbefehlen unterhalten. Es ist ein Bot, der nur mit `/`-Befehlen funktioniert und Sprachunterstützung hat."
+          },
+          "buttons": {
+               "label1": "Link einladen",
+               "label2": "Support-Server",
+               "label3": "Abstimmungslink"
+          }
+     }
+}

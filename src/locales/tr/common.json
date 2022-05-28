@@ -1,0 +1,10 @@
+{
+     "cooldown_error": "Bu komudu tekrar kullanabilmek için `{{cooldown}}` saniye daha beklemen gerekli!",
+     "missing_permissions": "Bu komutu kullanmak için `{{permission}}` yetkisine sahip olman gerekli!",
+     "unexpected_error": "Bu komudu kullanırken bir hata oluştu!",
+     "username": "Kullanıcı Adı",
+     "roles": "Roller",
+     "createdat": "Hesap Oluşturulma Tarihi",
+     "joinedat": "Sunucuya Katılma Tarihi",
+     "noreason": "Sebep belirtilmemiş"
+}

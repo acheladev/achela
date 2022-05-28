@@ -1,0 +1,10 @@
+{
+     "cooldown_error": "You need to wait another `{{cooldown}}` seconds to use this command again!",
+     "missing_permissions": "You need to have `{{permission}}` privilege to use this command!",
+     "unexpected_error": "An error occurred while using this command!",
+     "username": "Username",
+     "roles": "Roles",
+     "createdat": "Account Creation Date",
+     "joinedat": "Server Join Date",
+     "noreason": "Reason not specified"
+}

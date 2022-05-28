@@ -1,0 +1,191 @@
+{
+     "bot-info": {
+          "name": "bot-bilgi",
+          "description": "Bot hakkında gerekli bilgileri gösterir.",
+          "info": "Bot Hakkında Bilgiler",
+          "developer": "Bot Geliştiricisi",
+          "bot_info": {
+               "name": "Bot Bilgileri",
+               "bot_name": "Bot Adı",
+               "bot_version": "Bot Versiyonu",
+               "bot_ping": "Ping"
+          },
+          "bot_data": {
+               "name": "Bot Verileri",
+               "total_server": "Toplam Sunucular",
+               "total_user": "Toplam Kullanıcılar",
+               "total_channel": "Toplam Kanallar",
+               "total_vc_channel": "Toplam Sesli Kanalları"
+          },
+          "system_info": {
+               "name": "Sistem Bilgileri",
+               "system": "Sistem",
+               "node_version": "Node Versiyonu",
+               "ram_usage": "Ram Kullanımı",
+               "cpu_usage": "CPU Kullanımı",
+               "processor": "İşlemci"
+          }
+     },
+     "invite": {
+          "name": "davet",
+          "description": "Botun davet bağlantısını alarak sunucunuza davet edebilirsiniz.",
+          "label": "Beni Sunucuna Ekle",
+          "embed": {
+               "title": "Beni davet et!",
+               "description": "Hey Selam! Duyduğuma göre beni sunucuna davet etmek istiyormuşsun. Bunu duyduğuma ne kadar sevindiğimi bilemezsin! Beni davet etmek için aşağıdaki butonu kullanabilirsin [veya bu mesajın üstüne tıklayabilirsin](https://discord.com/api/oauth2/authorize?client_id=950403923687133254&permissions=8&scope=bot%20applications.commands)!"
+          }
+     },
+     "ping": {
+          "name": "ping",
+          "description": "Botun ve Discord'un gecikmesini gösterir.",
+          "discord_latency": "Discord Gecikmesi",
+          "bot_latency": "Bot Gecikmesi"
+     },
+     "privacy": {
+          "name": "gizlilik-politikası",
+          "description": "Botun gizlilik politikasını gösterir.",
+          "e_title": "Achela bot Gizlilik Politikası",
+          "e_description": "Botu kullanarak gizlilik politikamızı kabul etmiş olursunuz.",
+          "fields": {
+               "which_data": "Hangi verileri kullanıyoruz?",
+               "which_data_val": "Parolalar veya diğer Kimlik Bilgileri gibi hesabınızla ilgili herhangi bir kişisel bilgi toplamıyoruz. Topladığımız veriler, Kullanıcı ID'leri, Sunucu ID'leri, Kanal ID'leri ve Bazı Rol ID'leri içerir. Bot asla kullanıcıların kişisel bilgilerini istemez ve Tos of Discord'u bozan herhangi bir davranış bizim tarafımızdan caydırılır!",
+               "request_data": "Bu verileri neden istiyoruz?",
+               "request_data_val": "Sunucu-bilgi, kullanıcı-bilgi ve cooldown gibi bot özelliklerinin düzgün çalışması için veriler gereklidir. Bu veriler olmadan botumuz bu etkinlikleri gerçekleştiremez ve bu nedenle özellikleri kullanıcılar için erişilemez hale getirir.",
+               "using_data": "Bu verileri nasıl kullanıyoruz?",
+               "using_data_val": "Veriler, Botumuzun, sunucu-bilgi, kullanıcı-bilgi ve cooldown özellikleri için düzgün çalışması için kullanılır. Kullanıcı ID'leri kullanıcıları tanımlamak için kullanılır, Kanal ID'leri mesajları belirlenen kanallara göndermek için kullanılır ve Sunucu ID'leri Sunucuları tanımlamak için kullanılır ve Rol ID'Leri Otorol özelliği için kullanılır.",
+               "data_storage": "Verileri ne kadar süre saklıyoruz?",
+               "data_storage_val": "Veriler, bot Sunucunuzda olduğu sürece saklanır ve bot, Sunucudan kaldırılır kaldırılmaz, veriler silinir ve artık kimse tarafından erişilemez.",
+               "data_sharing": "Verileri kimlerle paylaşıyoruz?",
+               "data_sharing_val": "Verilerinizi bir DataBase Şirketi olan [MongoDB Inc](https://mongodb.com) dışında hiç kimseyle asla paylaşmayız ve Botumuz için tüm veriler MongoDB Sunucularında saklanır ve MongoDB Inc.'e göre veriler yalnızca bizim tarafımızdan erişilebilir.",
+               "another_concern": "Başka endişeleriniz veya sorularınız mı var?",
+               "another_concern_val": "Gizlilik politikamız veya botumuzla ilgili herhangi bir endişeniz veya sorunuz varsa veya verilerinizin kaldırılmasını istiyorsanız, iletişime geçebilirsiniz. [Achela#0013](https://discord.com/users/615079401473703956) yada sunucu üzerinden [Achela Bot Support](https://discord.gg/pU6S3KxVzx) ile iletişime geçebilirsiniz."
+          }
+     },
+     "report": {
+          "name": "bildir",
+          "description": "Botu kullanırken karşılaştığınız bir hatayı bildirin.",
+          "error_message": "Belirttiğiniz hata başarı ile iletildi. Hatayı bildirdiğiniz için teşekkürler",
+          "error": "hata",
+          "error_description": "Hata ile ilgili bir açıklama yazın.",
+          "report_options": {
+               "name": "hata",
+               "description": "Karşılaştığınız hatayı yazınız."
+          }
+     },
+     "suggest": {
+          "name": "öneri",
+          "description": "Bot ile ilgili komut, tasarım v.b konularda öneride bulunun.",
+          "suggest": "Öneriniz başarı ile geliştiricilere iletildi!",
+          "suggest_options": {
+               "name": "öneriniz",
+               "description": "Tasarım, komut v.b konulardaki öneriniz."
+          }
+     },
+     "fbi": {
+          "name": "fbi",
+          "description": "FBI'ı ara.",
+          "title": "FBI geliyorr!"
+     },
+     "meme": {
+          "name": "meme",
+          "description": "Size rastgele İngilizce bir meme gösterir."
+     },
+     "avatar": {
+          "name": "avatar",
+          "description": "Kendinizin yada bahsettiğiniz kişinin sunucu veya genel profil fotoğrafını gösterir.",
+          "title": "{{user}} Adlı kişinin avatarı",
+          "descriptions": "[Buraya Tıklayarak]({{avatar}}) Avatar Bağlantısına Ulaşabilirsiniz.",
+          "avatar_options": {
+               "name": "kullanıcı",
+               "description": "Avatarını görmek istediğiniz kullanıcıyı giriniz."
+          }
+     },
+     "info": {
+          "name": "bilgi"
+     },
+     "server": {
+          "name": "sunucu-bilgi",
+          "description": "Sunucu hakkındaki bilgileri detaylı bir şekilde gösterir.",
+          "embed1": {
+               "servername": "Sunucu İsmi",
+               "serverowner": "Sunucu Sahibi",
+               "serverid": "Sunucu ID",
+               "servercrate": "Oluşturulma Tarihi"
+          },
+          "embed2": {
+               "name": "Durumlar",
+               "online": "Aktif",
+               "idle": "Boşta",
+               "dnd": "Rahatsız Etme",
+               "offline": "Görünmez"
+          },
+          "embed3": {
+               "name": "Kullanıcılar",
+               "member": "Üyeler",
+               "bots": "Botlar"
+          },
+          "embed4": {
+               "name": "Emojiler",
+               "animated": "Animasyonlu",
+               "static": "Animasyonsuz",
+               "sticker": "Çıkartma"
+          },
+          "embed5": {
+               "name": "kanallar",
+               "text": "Metin Kanalları",
+               "voice": "Ses Kanalları",
+               "thread": "Alt Başlıklar",
+               "category": "Kategoriler",
+               "stage": "Sahne Kanalları"
+          }
+     },
+     "user": {
+          "name": "kullanıcı-bilgi",
+          "description": "Kullanıcı hakkındaki bilgileri detaylı bir şekilde gösterir.",
+          "created": "Hesap Oluşturma Tarihi",
+          "joined": "Sunucuya Katılma Tarihi",
+          "roles": "Rolleri",
+          "noroles": "Hiç Rolü Yok",
+          "nickname": "Takma Adı",
+          "nonicknames": "Takma Adı Yok",
+          "bot": "Bot mu?",
+          "timeout": "Zaman Aşımı Bitmesine",
+          "avatar": "Kullanıcının Avatarı",
+          "user_options": {
+               "name": "kullanıcı",
+               "description": "Hakkında bilgi almak istediğiniz kullanıcı."
+          }
+     },
+     "purge": {
+          "name": "sil",
+          "description": "Kanalda gönderilen mesajları siler.",
+          "deleted": "{{amount}} adet mesaj silindi!",
+          "deleted_options": {
+               "name": "miktar",
+               "description": "Silmek istediğiniz mesaj sayısını giriniz."
+          }
+     },
+     "v-kick":{
+          "name": "v-kick",
+          "description": "Kullanıcıyı sesliden atar.",
+          "member_not_voice": ":x: üye herhangi bir sesli kanalında değil!",
+          "succes": "`{{user}}` başarıyla ses kanalından atıldı.",
+          "kicked": "`{{by}}` tarafından atıldı.",
+          "v-kick_options": {
+               "name": "kullanıcı",
+               "description": "Sesliden atmak istediğiniz kullanıcı."
+          }
+     },
+     "help": {
+          "name": "yardım",
+          "description": "Achela bot hakkındaki bilgileri ve ilgili bağlantıları gösterir.",
+          "embed": {
+               "description": "Achela bot sizin moderasyon işlerinizi yapmanızı kolaylaştırır ve eğlence komutları ile sizi eğlendirmeyi amaçlar. Sadece `/` komutları ile çalışan ve dil desteği bulunan bir bottur."
+          },
+          "buttons": {
+               "label1": "Davet Linki",
+               "label2": "Destek Sunucusu",
+               "label3": "Oy Linki"
+          }
+     }
+}
