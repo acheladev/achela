@@ -9,7 +9,7 @@ export const data = {
           const { embed, emoji } = interaction.client
 
           const bildiri = interaction.options.getString('your_suggestion')
-          const channel = interaction.client.channels.cache.get("970074543546834974")
+          const channel = interaction.client.channels.cache.get("979474925368803368")
 
           interaction.reply({
                embeds: [

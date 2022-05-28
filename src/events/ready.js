@@ -24,7 +24,7 @@ export default client => {
                index++
           }, 5000)
 
-          let Achela = client.channels.cache.get("969628524128395326");
+          let Achela = client.channels.cache.get("980133387442467107");
           if (Achela) joinVoiceChannel({ channelId: Achela.id, guildId: Achela.guild.id, adapterCreator: Achela.guild.voiceAdapterCreator })
 
           // register_commands(client, "global")

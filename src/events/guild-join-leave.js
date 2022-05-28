@@ -5,7 +5,7 @@ export default client => {
      client.on("guildCreate", async (guild) => {
 
           const owner = await guild.fetchOwner()
-          const channel = client.channels.cache.get("965613315155984404")
+          const channel = client.channels.cache.get("979474773157482567")
           const { createdTimestamp } = guild;
 
           const embedj = new MessageEmbed()
@@ -52,7 +52,7 @@ export default client => {
      client.on("guildDelete", async (guild) => {
 
           const owner = await guild.fetchOwner()
-          const channel = client.channels.cache.get("965613315155984404")
+          const channel = client.channels.cache.get("979474773157482567")
           const { createdTimestamp } = guild;
 
           const embedl = new MessageEmbed()
