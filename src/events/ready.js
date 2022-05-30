@@ -13,7 +13,9 @@ export default client => {
                `Dil sistemi aktif!`,
                `Made by Achela`,
                `Moderasyon ve eğlence botu!`,
-               `${guilds} sunucuda, ${members} üyeye hizmet veriyor!`
+               `${guilds} sunucuda, ${members} üyeye hizmet veriyor!`,
+               `Sadece / komutlar ile çalışır!`,
+               `Only (/) commands`
           ];
 
           let index = 0
