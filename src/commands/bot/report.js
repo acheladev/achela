@@ -4,6 +4,7 @@ import { t } from "i18next"
 export const data = {
     name: t("report.name"),
     description: t("report.description"),
+    cooldown: 60,
     async execute(interaction) {
 
         const { embed, emoji } = interaction.client
@@ -19,14 +20,27 @@ export const data = {
         })
 
         const errors = new MessageEmbed()
-            .setColor("FUCHSIA")
-            .setAuthor({ name: `${interaction.guild.name} adlı sunucudan bir hata bildirildi!`})
-            .setTitle(`${interaction.user.username} Hatayı Bildiren Kişi!`)
-            .setDescription(`** ${bildiri} ** `)
-            .setFooter({ text: `Hatayı bildiren kişinin ID'si ${interaction.user.id} || Bildirilen Sunucu ${interaction.guild.id}`, iconURL: interaction.user.displayAvatarURL({ dynamic: true }) })
+            .setTitle(`${interaction.user.username} Adlı Kullanıcı Bir Şey Bildirdi!`)
+            .setThumbnail(`${interaction.user.displayAvatarURL({ dynamic: true })}`)
+            .addFields(
+                { name: `${emoji("member")} Kullanıcı`, value: `${interaction.user}`, inline: true },
+                { name: `${emoji("id")} Kullanıcı ID'si`, value: `${interaction.user.id}`, inline: true },
+                { name: `${emoji("search")} Bildirilen Sunucu`, value: `${interaction.guild}`, inline: true },
+                { name: `${emoji("carpi")} Hata`, value: `\`\`\`${bildiri}\`\`\``, inline: true }
+            )
+            .setColor("BLURPLE")
             .setTimestamp()
+
         channel.send({ embeds: [errors] })
 
+        /*
+        .setColor("FUCHSIA")
+        .setAuthor({ name: `${interaction.user.username} Adlı Kullanıcının Bildirisi!` })
+        .setTitle(`${interaction.user.username} Hatayı Bildiren Kişi!`)
+        .setDescription(`** ${bildiri} ** `)
+        .setFooter({ text: `Hatayı bildiren kişinin ID'si ${interaction.user.id} || Bildirilen Sunucu ${interaction.guild.id}`, iconURL: interaction.user.displayAvatarURL({ dynamic: true }) })
+        .setTimestamp()
+        */
     }
 }
 

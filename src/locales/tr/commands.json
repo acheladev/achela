@@ -77,7 +77,7 @@
           "description": "Bot ile ilgili komut, tasarım v.b konularda öneride bulunun.",
           "suggest": "Öneriniz başarı ile geliştiricilere iletildi!",
           "suggest_options": {
-               "name": "öneriniz",
+               "name": "öneri",
                "description": "Tasarım, komut v.b konulardaki öneriniz."
           }
      },

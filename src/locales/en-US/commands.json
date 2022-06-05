@@ -77,7 +77,7 @@
           "description": "Make suggestions on bot-related commands, designs, etc.",
           "suggest": "Your suggestion has been successfully forwarded to the developers!",
           "suggest_options": {
-               "name": "your_suggestion",
+               "name": "suggest",
                "description": "Your suggestion on design, command etc."
           }
      },
@@ -113,7 +113,7 @@
                "servercrate": "Creation Date"
           },
           "embed2": {
-               "name": "Situations",
+               "name": "Status",
                "online": "Online",
                "idle": "İdle",
                "dnd": "Dnd",

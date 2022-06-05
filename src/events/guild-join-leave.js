@@ -12,36 +12,12 @@ export default client => {
                .setTitle(`Sunucuya Eklendim!`)
                .setThumbnail(guild.iconURL({ dynamic: true }))
                .addFields(
-                    {
-                         name: `Sunucu Adı`,
-                         value: `${guild.name}`,
-                         inline: true,
-                    },
-                    {
-                         name: `Sunucu ID`,
-                         value: `${guild.id}`,
-                         inline: true,
-                    },
-                    {
-                         name: `Sunucu Sahibi`,
-                         value: `${owner}`,
-                         inline: true,
-                    },
-                    {
-                         name: "Sunucu Sahibi ID",
-                         value: `${guild.ownerId}`,
-                         inline: true,
-                    },
-                    {
-                         name: `Üye Sayısı`,
-                         value: `${guild.memberCount}`,
-                         inline: true,
-                    },
-                    {
-                         name: `Kuruluş Tarihi`,
-                         value: `<t:${parseInt(createdTimestamp / 1000)}:R>`,
-                         inline: true,
-                    }
+                    { name: `Sunucu Adı`, value: `${guild.name}`, inline: true, },
+                    { name: `Sunucu ID`, value: `${guild.id}`, inline: true, },
+                    { name: `Sunucu Sahibi`, value: `${owner}`, inline: true, },
+                    { name: "Sunucu Sahibi ID", value: `${guild.ownerId}`, inline: true, },
+                    { name: `Üye Sayısı`, value: `${guild.memberCount}`, inline: true, },
+                    { name: `Kuruluş Tarihi`, value: `<t:${parseInt(createdTimestamp / 1000)}:R>`, inline: true, }
                )
                .setColor("GREEN")
                .setTimestamp()
@@ -59,36 +35,12 @@ export default client => {
                .setTitle(`Sunucudan Ayrıldım!`)
                .setThumbnail(guild.iconURL({ dynamic: true }))
                .addFields(
-                    {
-                         name: `Sunucu Adı`,
-                         value: `${guild.name}`,
-                         inline: true,
-                    },
-                    {
-                         name: `Sunucu ID`,
-                         value: `${guild.id}`,
-                         inline: true,
-                    },
-                    {
-                         name: `Sunucu Sahibi`,
-                         value: `${owner}`,
-                         inline: true,
-                    },
-                    {
-                         name: "Sunucu Sahibi ID",
-                         value: `${guild.ownerId}`,
-                         inline: true,
-                    },
-                    {
-                         name: `Üye Sayısı`,
-                         value: `${guild.memberCount}`,
-                         inline: true,
-                    },
-                    {
-                         name: `Kuruluş Tarihi`,
-                         value: `<t:${parseInt(createdTimestamp / 1000)}:R>`,
-                         inline: true,
-                    }
+                    { name: `Sunucu Adı`, value: `${guild.name}`, inline: true, },
+                    { name: `Sunucu ID`, value: `${guild.id}`, inline: true, },
+                    { name: `Sunucu Sahibi`, value: `${owner}`, inline: true, },
+                    { name: "Sunucu Sahibi ID", value: `${guild.ownerId}`, inline: true, },
+                    { name: `Üye Sayısı`, value: `${guild.memberCount}`, inline: true, },
+                    { name: `Kuruluş Tarihi`, value: `<t:${parseInt(createdTimestamp / 1000)}:R>`, inline: true, }
                )
                .setColor("RED")
                .setTimestamp()

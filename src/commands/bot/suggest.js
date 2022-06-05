@@ -4,26 +4,33 @@ import { t } from "i18next"
 export const data = {
      name: t("suggest.name"),
      description: t("suggest.description"),
+     cooldown: 60,
      async execute(interaction) {
 
           const { embed, emoji } = interaction.client
 
-          const bildiri = interaction.options.getString('your_suggestion')
+          const bildiri = interaction.options.getString('suggest')
           const channel = interaction.client.channels.cache.get("979474925368803368")
 
           interaction.reply({
                embeds: [
-                    embed(`${emoji("verif")} ${t("suggest.suggest", {lng: interaction.locale})}`, "INFO")
+                    embed(`${emoji("verif")} ${t("suggest.suggest", { lng: interaction.locale })}`, "INFO")
                ],
                ephemeral: true
           })
 
           const errors = new MessageEmbed()
-               .setColor("FUCHSIA")
-               .setTitle(`${interaction.user.username} Öneri Yaptı!`)
-               .setDescription(`${bildiri}`)
-               .setFooter({ text: `Öneriyi yapan kişinin ID'si ${interaction.user.id}`, iconURL: interaction.user.displayAvatarURL({ dynamic: true }) })
+               .setTitle(`${interaction.user.username} Adlı Kullanıcı Bir Öneride Bulundu!`)
+               .setThumbnail(`${interaction.user.displayAvatarURL({ dynamic: true })}`)
+               .addFields(
+                    { name: `${emoji("member")} Kullanıcı`, value: `${interaction.user}`, inline: true },
+                    { name: `${emoji("id")}Kullanıcı ID'si`, value: `${interaction.user.id}`, inline: true },
+                    { name: `${emoji("search")}Bildirilen Sunucu`, value: `${interaction.guild}`, inline: true },
+                    { name: `${emoji("bulb")} Öneri`, value: `\`\`\`${bildiri}\`\`\``, inline: true }
+               )
+               .setColor("BLURPLE")
                .setTimestamp()
+
           channel.send({ embeds: [errors] })
 
      }

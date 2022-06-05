@@ -55,9 +55,9 @@ export const data = {
                          value:
                               `
              ${emoji("text")} ${t("server.embed5.text", { lng: locale })}: ${channels.cache.filter((c) => c.type === "GUILD_TEXT").size}
-             ${emoji("voice")} ${t("server.embed5.voice", { lng: locale })}: ${channels.cache.filter((c) => c.type === "GUILD_VOICE").size}
+             ${emoji("speaker")} ${t("server.embed5.voice", { lng: locale })}: ${channels.cache.filter((c) => c.type === "GUILD_VOICE").size}
              ${emoji("thread")} ${t("server.embed5.thread", { lng: locale })}: ${channels.cache.filter((c) => c.type === "GUILD_NEWS_THREAD" && "GUILD_PRIVATE_THREAD" && "GUILD_PUBLIC_THREAD").size}
-             ${emoji("channels")} ${t("server.embed5.category", { lng: locale })}: ${channels.cache.filter((c) => c.type === "GUILD_CATEGORY").size}
+             ${emoji("category")} ${t("server.embed5.category", { lng: locale })}: ${channels.cache.filter((c) => c.type === "GUILD_CATEGORY").size}
              ${emoji("stage")} ${t("server.embed5.stage", { lng: locale })}: ${channels.cache.filter((c) => c.type === "GUILD_STAGE_VOICE").size}
               `,
                          inline: true

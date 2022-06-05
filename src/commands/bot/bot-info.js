@@ -9,14 +9,15 @@ export const data = {
     description: t("bot-info.description"),
     execute(interaction) {
 
+        const { emoji } = interaction.client
         const bot_ping = Date.now() - interaction.createdTimestamp
 
         const embed = new MessageEmbed()
-            .setAuthor({ name: t("bot-info.info", {lng: interaction.locale}), iconURL: interaction.client.user.avatarURL() })
+            .setAuthor({ name: t("bot-info.info", { lng: interaction.locale }), iconURL: interaction.client.user.avatarURL() })
             .setThumbnail(interaction.guild.iconURL({ dynamic: true }))
             .addFields(
                 {
-                    name: `${t("bot-info.developer", { lng: interaction.locale })}`,
+                    name: `${emoji("owner")} ${t("bot-info.developer", { lng: interaction.locale })}`,
                     value:
                         `
                     [Achela#0013](https://discord.com/users/615079401473703956)
@@ -24,7 +25,7 @@ export const data = {
                     inline: true
                 },
                 {
-                    name: `${t("bot-info.bot_info.name", { lng: interaction.locale })}`,
+                    name: `${emoji("info")} ${t("bot-info.bot_info.name", { lng: interaction.locale })}`,
                     value:
                         `
                     ${t("bot-info.bot_info.bot_name", { lng: interaction.locale })}: **${interaction.client.user.username}**
@@ -34,7 +35,7 @@ export const data = {
                     inline: true
                 },
                 {
-                    name: `${t("bot-info.bot_data.name", { lng: interaction.locale })}`,
+                    name: `${emoji("data")} ${t("bot-info.bot_data.name", { lng: interaction.locale })}`,
                     value:
                         `
                     ${t("bot-info.bot_data.total_server", { lng: interaction.locale })}: **${interaction.client.guilds.cache.size}**
@@ -45,7 +46,7 @@ export const data = {
                     inline: true
                 },
                 {
-                    name: `${t("bot-info.system_info.name", { lng: interaction.locale })}`,
+                    name: `${emoji("edit")} ${t("bot-info.system_info.name", { lng: interaction.locale })}`,
                     value:
                         `
                     ${t("bot-info.system_info.system", { lng: interaction.locale })}: **${process.platform}**
