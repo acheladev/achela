@@ -9,41 +9,19 @@ export const data = {
         const { locale } = interaction
 
         const member = interaction.options.getMember('user') || interaction.member;
-        const userCreated = Date.now() - member.user.createdTimestamp;
-        const joinedTime = Date.now() - member.joinedTimestamp;
         const memberAvatar = member.avatarURL({ dynamic: true }) || member.user.displayAvatarURL({ dynamic: true });
+        let activity = interaction.member.presence?.activities.find((a) => a.type === "CUSTOM")
         const embed = new MessageEmbed()
             .setAuthor({ name: member.user.tag, iconURL: member.user.displayAvatarURL({ dynamic: true }) })
             .setThumbnail(memberAvatar)
             .setFooter({ text: member.id, iconURL: member.displayAvatarURL({ dynamic: true }) })
-            .setColor('RANDOM')
+            .setColor("BLURPLE")
             .addFields(
-                {
-                    name: t("user.created", { lng: locale }),
-                    value: `\`${member.user.createdAt.toLocaleString()}\`\n**<t:${Math.floor(
-                        member.user.createdTimestamp / 1000,
-                    )}:R>**`,
-                },
-                {
-                    name: t("user.joined", { lng: locale }),
-                    value: `\`${member.joinedAt.toLocaleString()}\`\n**<t:${Math.floor(member.joinedTimestamp / 1000)}:R>**`,
-                },
-                {
-                    name: t("user.user", { lng: locale }),
-                    value:
-                        member.roles.cache
-                            .filter((r) => r.id !== interaction.guild.id)
-                            .map((r) => r.toString())
-                            .join(', ') || t("user.noroles", { lng: locale }),
-                },
-                {
-                    name: t("user.nickname", { lng: locale }),
-                    value: member.nickname || t("user.nonickname", { lng: locale }),
-                },
-                {
-                    name: t("user.bot", { lng: locale }),
-                    value: member.user.bot ? '✅' : ':x:',
-                },
+                { name: t("user.roles", { lng: locale }), value: member.roles.cache.filter((r) => r.id !== interaction.guild.id).map((r) => r.toString()).join(', ') || t("user.noroles", { lng: locale }), inline: true },
+                { name: t("user.nickname", { lng: locale }), value: member.nickname || t("user.nonickname", { lng: locale }), inline: true },
+                { name: t("user.presence", { lng: locale }), value: activity?.state || "Özel durumu yok", inline: true },
+                { name: t("user.created", { lng: locale }), value: `\`${member.user.createdAt.toLocaleString()}\`\n**<t:${Math.floor(member.user.createdTimestamp / 1000,)}:R>**`, inline: true },
+                { name: t("user.joined", { lng: locale }), value: `\`${member.joinedAt.toLocaleString()}\`\n**<t:${Math.floor(member.joinedTimestamp / 1000)}:R>**`, inline: true },
             );
         if (member.communicationDisabledUntilTimestamp) {
             embed.addField(
@@ -59,7 +37,7 @@ export const data = {
                 .setURL(member.user.displayAvatarURL({ dynamic: true }))
                 .setLabel(t("user.avatar", { lng: locale })),
         );
-        interaction.reply({ embeds: [embed], components: [row], ephemeral: true });
+        interaction.reply({ embeds: [embed], components: [row] });
 
     }
 }

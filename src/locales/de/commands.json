@@ -147,9 +147,10 @@
           "noroles": "Keine Rolle",
           "nickname": "Spitzname",
           "nonicknames": "Kein Spitzname",
-          "bot": "Ist es ein Bot?",
           "timeout": "Zeitüberschreitung läuft ab",
           "avatar": "Avatar des Benutzers",
+          "presence": "Besonderer Fall",
+          "nopresence": "Keine Ausnahme festgelegt",
           "user_options": {
                "name": "benutzer",
                "description": "Der Benutzer, über den Sie Informationen erhalten möchten."
@@ -164,7 +165,7 @@
                "description": "Geben Sie die Anzahl der Nachrichten ein, die Sie löschen möchten."
           }
      },
-     "v-kick":{
+     "v-kick": {
           "name": "v-kick",
           "description": "Kickt den Benutzer aus der Voicemail.",
           "member_not_voice": ":x: Das Mitglied befindet sich auf keinem Sprachkanal!",

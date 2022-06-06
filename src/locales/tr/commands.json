@@ -147,10 +147,11 @@
           "roles": "Rolleri",
           "noroles": "Hiç Rolü Yok",
           "nickname": "Takma Adı",
-          "nonicknames": "Takma Adı Yok",
-          "bot": "Bot mu?",
+          "nonickname": "Takma Adı Yok",
           "timeout": "Zaman Aşımı Bitmesine",
           "avatar": "Kullanıcının Avatarı",
+          "presence": "Özel Durum",
+          "nopresence": "Özel Durum Belirlenmemiş",
           "user_options": {
                "name": "kullanıcı",
                "description": "Hakkında bilgi almak istediğiniz kullanıcı."

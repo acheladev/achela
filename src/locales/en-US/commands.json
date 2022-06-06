@@ -148,9 +148,10 @@
           "noroles": "No Role",
           "nickname": "Nickname",
           "nonickname": "No Nickname",
-          "bot": "Is it a bot?",
           "timeout": "Timeout Expires",
           "avatar": "User's Avatar",
+          "presence": "Custom Status",
+          "nopresence": "No Exception Set",
           "user_options": {
                "name": "user",
                "description": "The user you want to receive information about."
