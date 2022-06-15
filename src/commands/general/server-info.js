@@ -32,7 +32,7 @@ export const data = {
                          inline: true
                     },
                     {
-                         name: `${emoji("member")} ${t("server.embed3.name", { lng: locale })}`,
+                         name: `${emoji("member")} ${t("server.embed3.name", { lng: locale, members: members.cache.size })}`,
                          value:
                               `
                  ${emoji("user")} ${t("server.embed3.member", { lng: locale })}: ${members.cache.filter((m) => !m.user.bot).size}
@@ -41,7 +41,7 @@ export const data = {
                          inline: true
                     },
                     {
-                         name: `${emoji("flag")} ${t("server.embed4.name", { lng: locale })}`,
+                         name: `${emoji("flag")} ${t("server.embed4.name", { lng: locale, emojis: emojis.cache.size })}`,
                          value:
                               `
                  ${emoji("emoji")} ${t("server.embed4.animated", { lng: locale })}: ${emojis.cache.filter((e) => e.animated).size}
@@ -51,14 +51,14 @@ export const data = {
                          inline: true
                     },
                     {
-                         name: `${emoji("channels")} ${t("server.embed5.name", { lng: locale })}`,
+                         name: `${emoji("nokta")} ${t("server.embed5.name", { lng: locale, channels: channels.cache.size })}`,
                          value:
                               `
-             ${emoji("text")} ${t("server.embed5.text", { lng: locale })}: ${channels.cache.filter((c) => c.type === "GUILD_TEXT").size}
+             ${emoji("category")} ${t("server.embed5.category", { lng: locale })}: ${channels.cache.filter((c) => c.type === "GUILD_CATEGORY").size}
+             ${emoji("channels")} ${t("server.embed5.text", { lng: locale })}: ${channels.cache.filter((c) => c.type === "GUILD_TEXT").size}
+             ${emoji("stage")} ${t("server.embed5.stage", { lng: locale })}: ${channels.cache.filter((c) => c.type === "GUILD_STAGE_VOICE").size}
              ${emoji("speaker")} ${t("server.embed5.voice", { lng: locale })}: ${channels.cache.filter((c) => c.type === "GUILD_VOICE").size}
              ${emoji("thread")} ${t("server.embed5.thread", { lng: locale })}: ${channels.cache.filter((c) => c.type === "GUILD_NEWS_THREAD" && "GUILD_PRIVATE_THREAD" && "GUILD_PUBLIC_THREAD").size}
-             ${emoji("category")} ${t("server.embed5.category", { lng: locale })}: ${channels.cache.filter((c) => c.type === "GUILD_CATEGORY").size}
-             ${emoji("stage")} ${t("server.embed5.stage", { lng: locale })}: ${channels.cache.filter((c) => c.type === "GUILD_STAGE_VOICE").size}
               `,
                          inline: true
                     }

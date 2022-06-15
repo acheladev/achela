@@ -4,6 +4,7 @@ import { t } from "i18next"
 export const data = {
     name: t("privacy.name"),
     description: t("privacy.description"),
+    cooldown: 30,
     execute(interaction) {
 
         const embed = new MessageEmbed()

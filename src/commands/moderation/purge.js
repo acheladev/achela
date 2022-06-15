@@ -4,7 +4,8 @@ import { t } from "i18next"
 export const data = {
     name: t("purge.name"),
     description: t("purge.description"),
-    cooldown: 10,
+    permission: "MANAGE_MESSAGES",
+    cooldown: 20,
     execute(interaction) {
 
         const { channel } = interaction

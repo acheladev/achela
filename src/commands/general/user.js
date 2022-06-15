@@ -8,20 +8,18 @@ export const data = {
 
         const { locale } = interaction
 
-        const member = interaction.options.getMember('user') || interaction.member;
+        const member = interaction.options.getMember('user') || interaction.user
         const memberAvatar = member.avatarURL({ dynamic: true }) || member.user.displayAvatarURL({ dynamic: true });
-        let activity = interaction.member.presence?.activities.find((a) => a.type === "CUSTOM")
         const embed = new MessageEmbed()
-            .setAuthor({ name: member.user.tag, iconURL: member.user.displayAvatarURL({ dynamic: true }) })
+            .setAuthor({ name: member.tag, iconURL: member.displayAvatarURL({ dynamic: true }) })
             .setThumbnail(memberAvatar)
             .setFooter({ text: member.id, iconURL: member.displayAvatarURL({ dynamic: true }) })
             .setColor("BLURPLE")
             .addFields(
-                { name: t("user.roles", { lng: locale }), value: member.roles.cache.filter((r) => r.id !== interaction.guild.id).map((r) => r.toString()).join(', ') || t("user.noroles", { lng: locale }), inline: true },
                 { name: t("user.nickname", { lng: locale }), value: member.nickname || t("user.nonickname", { lng: locale }), inline: true },
-                { name: t("user.presence", { lng: locale }), value: activity?.state || "Özel durumu yok", inline: true },
-                { name: t("user.created", { lng: locale }), value: `\`${member.user.createdAt.toLocaleString()}\`\n**<t:${Math.floor(member.user.createdTimestamp / 1000,)}:R>**`, inline: true },
-                { name: t("user.joined", { lng: locale }), value: `\`${member.joinedAt.toLocaleString()}\`\n**<t:${Math.floor(member.joinedTimestamp / 1000)}:R>**`, inline: true },
+                { name: t("user.id", { lng: locale }), value: member.id, inline: true },
+                { name: t("user.created", { lng: locale }), value: `**<t:${Math.floor(member.createdTimestamp / 1000,)}:R>**`, inline: true },
+                { name: t("user.joined", { lng: locale }), value: `**<t:${Math.floor(member.joinedTimestamp / 1000)}:R>**`, inline: true },
             );
         if (member.communicationDisabledUntilTimestamp) {
             embed.addField(
@@ -34,7 +32,7 @@ export const data = {
         const row = new MessageActionRow().addComponents(
             new MessageButton()
                 .setStyle('LINK')
-                .setURL(member.user.displayAvatarURL({ dynamic: true }))
+                .setURL(member.displayAvatarURL({ dynamic: true }))
                 .setLabel(t("user.avatar", { lng: locale })),
         );
         interaction.reply({ embeds: [embed], components: [row] });

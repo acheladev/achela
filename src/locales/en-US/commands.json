@@ -120,18 +120,18 @@
                "offline": "Offline"
           },
           "embed3": {
-               "name": "Users",
+               "name": "Users ({{members}})",
                "member": "Members",
                "bots": "Bots"
           },
           "embed4": {
-               "name": "Emojis",
+               "name": "Emojis ({{emojis}})",
                "animated": "Animated",
                "static": "Static",
                "sticker": "Sticker"
           },
           "embed5": {
-               "name": "Channels",
+               "name": "Channels ({{channels}})",
                "text": "Text Channels",
                "voice": "Voice Channels",
                "thread": "Threads",
@@ -144,6 +144,7 @@
           "description": "Shows detailed information about the user.",
           "created": "Account Creation Date",
           "joined": "Server Join Date",
+          "id": "User ID",
           "roles": "Roles",
           "noroles": "No Role",
           "nickname": "Nickname",

@@ -3,6 +3,8 @@ import { t } from "i18next"
 export const data = {
     name: t("v-kick.name"),
     description: t("v-kick.description"),
+    permission: "MUTE_MEMBERS",
+    cooldown: 15,
     async execute(interaction) {
 
         const member = interaction.options.getMember('user');

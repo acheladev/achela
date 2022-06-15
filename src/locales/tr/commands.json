@@ -120,18 +120,18 @@
                "offline": "Görünmez"
           },
           "embed3": {
-               "name": "Kullanıcılar",
+               "name": "Kullanıcılar ({{members}})",
                "member": "Üyeler",
                "bots": "Botlar"
           },
           "embed4": {
-               "name": "Emojiler",
+               "name": "Emojiler ({{emojis}})",
                "animated": "Animasyonlu",
                "static": "Animasyonsuz",
                "sticker": "Çıkartma"
           },
           "embed5": {
-               "name": "kanallar",
+               "name": "kanallar ({{channels}})",
                "text": "Metin Kanalları",
                "voice": "Ses Kanalları",
                "thread": "Alt Başlıklar",
@@ -144,6 +144,7 @@
           "description": "Kullanıcı hakkındaki bilgileri detaylı bir şekilde gösterir.",
           "created": "Hesap Oluşturma Tarihi",
           "joined": "Sunucuya Katılma Tarihi",
+          "id": "Kullanıcı ID",
           "roles": "Rolleri",
           "noroles": "Hiç Rolü Yok",
           "nickname": "Takma Adı",

@@ -7,6 +7,7 @@ import os from "os";
 export const data = {
     name: t("bot-info.name"),
     description: t("bot-info.description"),
+    cooldown: 15,
     execute(interaction) {
 
         const { emoji } = interaction.client

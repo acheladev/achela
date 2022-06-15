@@ -5,7 +5,7 @@ import axios from "axios";
 export const data = {
     name: t("meme.name"),
     description: t("meme.description"),
-    cooldown: 15,
+    cooldown: 20,
     async execute(interaction) {
 
         await interaction.deferReply();

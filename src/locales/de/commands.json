@@ -119,18 +119,18 @@
                "offline": "Unsichtbar"
           },
           "embed3": {
-               "name": "Benutzer",
+               "name": "Benutzer ({{members}})",
                "member": "Mitglieder",
                "bots": "Stiefel"
           },
           "embed4": {
-               "name": "Emojis",
+               "name": "Emojis ({{emojis}})",
                "animated": "Animiert",
                "static": "Keine Animation",
                "sticker": "Aufkleber"
           },
           "embed5": {
-               "name": "Kanäle",
+               "name": "Kanäle ({{channels}})",
                "text": "Textkanäle",
                "voice": "Audiokanäle",
                "thread": "Unterüberschriften",
@@ -143,6 +143,7 @@
           "description": "Zeigt detaillierte Informationen über den Benutzer an.",
           "created": "Erstellungsdatum des Kontos",
           "joined": "Datum des Serverbeitritts",
+          "id": "Benutzer-ID",
           "roles": "Rollen",
           "noroles": "Keine Rolle",
           "nickname": "Spitzname",
